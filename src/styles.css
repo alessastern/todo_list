@@ -11,24 +11,31 @@
 
 .card-wrapper {
   position: relative;
+  height: 30rem;
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding-top: 20rem;
+  padding-top: 10rem;
 }
 
-.card-active {
+.card {
   position: absolute;
   top: 20%;
   background-color: var(--light);
   width: 40rem;
   height: 20rem;
-  z-index: 999;
+  z-index: 900;
   border: 1px solid black;
   border-radius: 10px;
+  padding: 3px;
+  display: grid;
+  grid-template-rows: 3rem 12rem max-content;
 }
-
-.card-notactive-1 {
+.active-card {
+  transform: rotate(180deg);
+  top: 50%;
+}
+/* .card-notactive-1 {
   position: absolute;
   top: 22%;
   background-color: var(--unactive);
@@ -36,24 +43,23 @@
   height: 20rem;
   border: 1px solid black;
   border-radius: 10px;
-  z-index: 998;
-  opacity: 90%;
+  z-index: 80;
 }
 
 .card-notactive-2 {
   position: absolute;
-  top: 24%;
+  top: 23%;
   background-color: var(--unactive);
   width: 38rem;
   height: 20rem;
   border: 1px solid black;
   border-radius: 10px;
-  opacity: 50%;
-}
+  z-index: 70;
+} */
 
 .title {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 3rem;
   font-weight: 400;
   font-size: xx-large;
 }
